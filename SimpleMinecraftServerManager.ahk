@@ -24,7 +24,7 @@ ServerFolder = %AppFolder%\Servers
 AppSettingsIni = %AppSettingsFolder%\Settings.ini
 ;//////////////[Update]///////////////
 AppUpdateFile = %AppFolder%\temp\OldFile.ahk
-version = 0.1
+version = 0.11
 ;____________________________________________________________
 ;//////////////[variables]///////////////
 global NewProfileName
@@ -224,7 +224,7 @@ if SelectedFile =
 }
 else
 {
-    FileCopy, %SelectedFile%,% ServerFolder . "\" . DropDownList1 . "\*.*"
+    FileCopy, %SelectedFile%,% ServerFolder . "\" . DropDownList1 . "\Server.jar"
     UpdateHomeScreen()
 }
 return
